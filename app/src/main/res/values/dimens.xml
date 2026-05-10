@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="text_size_welcome">32sp</dimen>
+    <dimen name="text_size_hello">22sp</dimen>
+    <dimen name="text_size_description">18sp</dimen>
+    <dimen name="padding_content">24dp</dimen>
+    <dimen name="margin_top_elements">16dp</dimen>
+    <dimen name="button_margin_top">24dp</dimen>
+</resources>

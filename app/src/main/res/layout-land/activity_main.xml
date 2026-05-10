@@ -15,19 +15,13 @@
         android:scaleType="centerCrop"
         android:contentDescription="@null" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_h"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
 
     <ScrollView
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/guideline_h"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -36,61 +30,56 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"
-            android:padding="16dp">
+            android:padding="@dimen/padding_content">
 
             <TextView
+                android:id="@+id/welcome_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/welcome_text"
                 android:textColor="@android:color/white"
-                android:textSize="24sp"
+                android:textSize="@dimen/text_size_welcome"
                 android:textStyle="bold"
                 android:shadowColor="#7F000000"
                 android:shadowDx="2"
                 android:shadowDy="2"
+                android:shadowRadius="8"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/hello_world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_hello"
+                android:layout_marginTop="@dimen/margin_top_elements"
+                android:shadowColor="#7F000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
                 android:shadowRadius="4"
                 android:gravity="center" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginTop="4dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/hello_world"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    android:shadowColor="#7F000000"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:shadowRadius="2" />
-
-                <View
-                    android:layout_width="16dp"
-                    android:layout_height="1dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/description"
-                    android:textColor="@android:color/white"
-                    android:textSize="14sp"
-                    android:shadowColor="#7F000000"
-                    android:shadowDx="1"
-                    android:shadowDy="1"
-                    android:shadowRadius="2" />
-            </LinearLayout>
+                android:text="@string/description"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_description"
+                android:layout_marginTop="@dimen/margin_top_elements"
+                android:shadowColor="#7F000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="4"
+                android:gravity="center" />
 
             <Button
                 android:id="@+id/button_enter"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="@dimen/button_margin_top"
                 android:text="@string/button_text"
                 android:textColor="@android:color/white"
                 app:strokeColor="@android:color/white"
