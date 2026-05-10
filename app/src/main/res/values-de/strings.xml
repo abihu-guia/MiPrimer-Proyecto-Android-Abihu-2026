@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mein erstes Android-Projekt</string>
+    <string name="welcome_text">Willkommen in der Cloud!</string>
+    <string name="description">Diese Benutzeroberfl\u00e4che passt sich jedem Bildschirm an.</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="button_text">Eintreten</string>
+</resources>
